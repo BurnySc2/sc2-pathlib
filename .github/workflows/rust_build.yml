@@ -69,7 +69,7 @@ jobs:
       run: |
         sudo apt-get install tree
         tree target/release
-        mv ./target/release/libmy_library.so ./artifacts/my_library.so
+        mv ./target/release/libsc2pathlib.so ./artifacts/sc2pathlib.so
       if: matrix.os == 'ubuntu-latest' && matrix.python-version == '3.7'
 
     - name: Create archive for Windows
