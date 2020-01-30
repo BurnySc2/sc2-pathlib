@@ -75,7 +75,8 @@ jobs:
     - name: Create archive for Windows
       run: |
         dir target/release
-        python rename_output.py ${{ matrix.python-version }}
+        dir
+        python ./rename_output.py ${{ matrix.python-version }}
       if: matrix.os == 'windows-latest'
 
     # See - https://github.com/actions/upload-artifact/issues/39
